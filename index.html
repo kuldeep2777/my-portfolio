@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b18;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #10152a;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.hero h3 {
+    color: #a78bfa;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    color: #b8bfd3;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6d28d9;
+    transform: translateY(-3px);
+}
+
+.profile {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    box-shadow: 0 0 55px #8b5cf655;
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #a78bfa;
+}
+
+.about {
+    background: #10152a;
+    text-align: center;
+    color: #b8bfd3;
+    line-height: 1.9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #151b32;
+    border: 1px solid #303957;
+    padding: 30px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #a78bfa;
+}
+
+.card h3 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b8bfd3;
+    line-height: 1.7;
+}
+
+.contact {
+    text-align: center;
+    background: #10152a;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #b8bfd3;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+        font-size: 60px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyPortfolio.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h3>Hello, I'm</h3>
+        <h1>Kuldeep Singh <span>Chauhan</span></h1>
+        <h3>AI & ML Student</h3>
+        <p>
+            I am a passionate student learning
+            Artificial Intelligence, Machine Learning
+            and Web Development. Welcome to my portfolio!
+        </p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+
+    <div class="profile">
+    <img src="myphoto.jpeg" alt="My Photo">
+</div>
+</div>
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <p>
+        I am currently pursuing BSc AI & ML.
+        I enjoy learning new technologies,
+        programming and building creative projects.
+        My goal is to become a skilled developer.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Python</h3>
+            <p>Learning Python programming and problem solving.</p>
+        </div>
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Creating website structures using HTML.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Designing attractive and responsive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Communication</h3>
+            <p>Teamwork and communication skills.</p>
+        </div>
+    </div>
+</section>
+<section id="education">
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>BSc AI & ML</h3>
+            <p>First Year – Currently Studying</p>
+            <p>Nirmala Memorial Foundation College of Commerce and Science</p>
+        </div>
+
+        <div class="card">
+            <h3>12th Standard</h3>
+            <p>Higher Secondary Education</p>
+            <p>P.D. Turakhiya College of Commerce and Science</p>
+        </div>
+
+        <div class="card">
+            <h3>10th Standard</h3>
+            <p>Shivaji Vidya Mandir High School</p>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>My first personal website using HTML and CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>Python Project</h3>
+            <p>Learning to build projects using Python.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <p>Feel free to contact me for any opportunity or collaboration.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Email</h3>
+            <p>kuldeepakji2777@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <h3>Phone</h3>
+            <p>+91 9137</p>
+        </div>
+
+        <div class="card">
+            <h3>Location</h3>
+            <p>Mumbai, India</p>
+        </div>
+    </div>
+
+    <a href="mailto:your-email@gmail.com" class="btn">
+        Send Me an Email
+    </a>
+</section>
+<footer>
+    <p>© 2026 My Portfolio | Designed by Me</p>
+</footer>
+
+</body>
+</html>
